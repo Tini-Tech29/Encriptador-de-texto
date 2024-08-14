@@ -1,0 +1,187 @@
+/*Propiedades CSS*/
+*{
+    font-family: 'Inter';
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+body {
+    
+    background-image: url(imagenes/1_AC1-Y4-0Y_t6Jm9f_HrEfQ.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width:100vw;
+    height:100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+}
+
+.logo{
+    margin: 10px;
+}
+
+.titulo{
+    color: whitesmoke;
+    font-size: 2rem;
+    font-style: oblique;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+main{
+    display: flex;
+    margin: 40px;
+    justify-content: space-evenly
+}
+
+.text-area{
+    border: none;
+    border-radius:24px;
+    padding: 20px 20px;
+    text-transform: lowercase;
+    resize: none;
+    margin: 50px;
+    margin-bottom: 0px;
+}
+
+::placeholder{
+    color:#02468D; 
+    margin: 20px;
+}
+
+.text-area:focus{
+    outline: none;
+}
+
+.mensaje{
+    background: whitesmoke;
+    background-image: url("imagenes/102649.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #0062bd;
+    border: none;
+    border-radius:24px; 
+    margin: 50px;
+    text-transform: lowercase;
+    padding: 20px 20px;
+    resize: none;  
+     
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn-desencriptar{
+    border: 3px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius:24px;
+    color: black;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+}
+
+.btn-desencriptar:hover{
+    background-color: #A2A2A2;
+}
+
+.btn-encriptar{
+    background-color: black;
+    border: 3px solid whitesmoke;
+    border-radius:24px;
+    color: whitesmoke;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+}
+
+.btn-encriptar:hover{
+    background-color: #a2a2a2;
+}
+
+.boton-copiar{
+    display: flex;
+    justify-content: center;
+}
+.copiar{
+    border: 3px solid black;
+    border-radius:24px;
+    color: #02468D;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+}
+
+.copiar:hover{
+    background-color: #a2a2a2;
+}
+
+.informacion{
+    color:whitesmoke;
+    font-size: 1rem;
+    margin-top: 0px;
+}
+
+footer{
+    background-color: black;
+    padding: 16px;
+    text-align: center;
+    font-size: 1rem;
+    color:whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.RRSS{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;    
+}
+
+@media (max-width: 800px ){
+    main{
+        flex-direction: column;
+    }
+
+    .parte1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .parte2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    header{
+        margin: 0%;
+    }
+
+    footer{
+        margin:0%
+    }
+}
+
